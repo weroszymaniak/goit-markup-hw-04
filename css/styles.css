@@ -11,6 +11,8 @@
     --box-shadow-color: rgba(0, 0, 0, 0.12);
     --box-shadow-color2: rgba(0, 0, 0, 0.14);
     --box-shadow-color3: rgba(0, 0, 0, 0.2);
+    --box-shadow-color4: rgba(0, 0, 0, 0.06);
+    --box-shadow-color5: rgba(0, 0, 0, 0.16);
     --button-border: rgba(0, 0, 0, 0.15);
     --button-shadow1: rgba(0, 0, 0, 0.1);
     --button-shadow2: rgba(0, 0, 0, 0.08);
@@ -96,10 +98,7 @@ body {
     text-decoration: none;
 }
 
-.menu-nav-link:hover {
-    color: var(--logo-text-color-blue);
-}
-
+.menu-nav-link:hover,
 .menu-nav-link:focus {
     color: var(--logo-text-color-blue);
 }
@@ -112,7 +111,7 @@ body {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 30px;
+    gap: 0 30px;
 }
 
 .contact-header:hover {
@@ -123,12 +122,9 @@ body {
     color: var(--logo-text-color-blue);
 }
 
-.mail {
-    display: inline;
-}
-
-.tel {
-    margin-left: 0px;
+.header-icon {
+    display: inline-flex;
+    gap: 10px;
 }
 
 .icon-envelope {
@@ -145,6 +141,7 @@ body {
 }
 
 /* hero */
+
 .hero {
     padding: 200px;
     background-color: var(--background-color);
@@ -156,6 +153,8 @@ body {
         url(/images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -379,12 +378,21 @@ body {
     padding: 0px;
     margin: 0px;
 }
-
+.project-box {
+    margin: 0px;
+}
 .project-item {
     padding-bottom: 20px;
     margin-bottom: 30px;
     background: var(--main-white-color);
     border: 1px solid var(--item-border);
+}
+
+.project-item:hover {
+    box-shadow: 0px 1px 1px var(--box-shadow-color),
+        0px 4px 4px var(--box-shadow-color4),
+        1px 4px 6px var(--box-shadow-color5);
+    cursor: pointer;
 }
 
 .project-header {
@@ -436,7 +444,12 @@ body {
 }
 
 .client-logo {
-    fill: var(--stroke-color);
+}
+.client-item:hover,
+.client-item:focus {
+    fill: var(--logo-text-color-blue);
+    border-radius: 4px;
+    border: 1px solid var(--logo-text-color-blue);
 }
 
 .client-item {
@@ -444,16 +457,9 @@ body {
     height: 92px;
     border: 1px solid var(--stroke-color);
     border-radius: 4px;
-    background-color: var(--main-white-color);
     padding: 17px 32px 17px 32px;
     display: block;
-}
-.client-item:hover,
-.client-item:focus {
-    color: var(--stroke-color);
-    border: 1px solid var(--logo-text-color-blue);
-    /* border-radius: 4px;
-    fill:var(--logo-text-color-blue); */
+    fill: var(--stroke-color);
 }
 
 /* footer */
