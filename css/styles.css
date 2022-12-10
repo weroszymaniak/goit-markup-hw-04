@@ -150,7 +150,7 @@ body {
             var(--gradient-color),
             var(--gradient-color)
         ),
-        url(/images/hero-bg.jpg);
+        url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1600px;
