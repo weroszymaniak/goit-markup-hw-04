@@ -142,6 +142,9 @@ body {
 
 /* hero */
 
+.hero-bg {
+    background-color: var(--background-color);
+}
 .hero {
     padding: 200px;
     background-color: var(--background-color);
@@ -336,12 +339,19 @@ body {
     height: 44px;
     display: block;
 }
-.team-icons-link:hover > .team-social,
-.team-icons-link:focus > .team-social {
+
+.team-icon-box:hover > .team-icons-link {
     border-radius: 50%;
     background-color: var(--logo-text-color-blue);
     fill: var(--main-white-color);
 }
+
+.team-icon-box:focus > .team-icons-link {
+    border-radius: 50%;
+    background-color: var(--logo-text-color-blue);
+    fill: var(--main-white-color);
+}
+
 .team-social {
     padding: 12px;
 }
