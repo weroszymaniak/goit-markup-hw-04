@@ -453,8 +453,6 @@ body {
     padding-left: 0;
 }
 
-.client-logo {
-}
 .client-item:hover,
 .client-item:focus {
     fill: var(--logo-text-color-blue);
@@ -463,13 +461,11 @@ body {
 }
 
 .client-item {
-    width: 170px;
-    height: 92px;
     border: 1px solid var(--stroke-color);
     border-radius: 4px;
-    padding: 17px 32px 17px 32px;
-    display: block;
+    padding: 16px 32px;
     fill: var(--stroke-color);
+    display: block;
 }
 
 /* footer */
